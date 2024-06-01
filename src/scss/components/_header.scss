@@ -1,0 +1,124 @@
+@use "../variables" as *;
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.67;
+  z-index: 2;
+  &__container {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button{
+    width: 36px;
+    height: 36px;
+    margin-right: 45px;
+  }
+  &__button-content{
+    display: block;
+    background-color: $white;
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 0 auto;
+    position: relative;
+    &::before,&::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: $white;
+      transition: transform 0.7s ease-in-out;
+    }
+    &::before{
+      top:5px;
+    }
+    &::after{
+      bottom: 5px;
+    }
+    &_open{
+      background-color: transparent;
+    }
+    &_open::before{
+      transform:translateY(-5px) rotate(45deg);
+    }
+    &_open::after{
+      transform:translateY(5px) rotate(-45deg);
+    }
+  }
+  &__logo {
+    width: 59px;
+  }
+  &__logo-image {
+    width: 100%;
+    height: 100%;
+  }
+  &__contacts-link {
+    font-size: 9px;
+  }
+  &__contacts-text {
+    display: none;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #979799;
+  }
+}
+.navigation {
+  background-color:$light-black;
+  position: fixed;
+  width: 265px;
+  left: -74%;
+  top: 46px;
+  bottom: 0;
+  transition: left 0.5s ease-in-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  &_open{
+    left: 0;;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  &__item {
+    border-top: 1px solid rgba($green,0.3);
+    border-bottom: 1px solid rgba($green,0.3);
+    padding-left: 15px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+  }
+  &__icon {
+    width: 23px;
+    height: 23px;
+    stroke: $green;
+    margin-right: 10px;
+    stroke-width: 3px;
+    stroke: $green;
+    &_house,&_sauna{
+      stroke-width: 1px;
+    }
+  }
+  &__button{
+    font-size: 12px;
+    font-weight: 700;
+    background-color: $green;
+    color:$white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 188px;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+}
+

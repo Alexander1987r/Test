@@ -1,0 +1,109 @@
+@use "../variables" as *;
+.division {
+  padding: 43px 0 45px 0;
+  font-weight: 700;
+  font-size: 18px;
+  &__text {
+    margin-bottom: 35px;
+  }
+  &__list-button {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 24px;
+  }
+  &__item-button {
+    margin-bottom: 9px;
+  }
+  &__item-button:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__button {
+    padding: 0 16px;
+    border: none;
+    outline: 3px solid $gray;
+  }
+  &__button-vacancy{
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  max-width: 745px;
+  margin:0 auto 35px auto;
+  &__item.ac {
+    background-color: transparent;
+    border: 3px solid $gray;
+    border-radius: 30px;
+    padding: 21px;
+    margin-top: 0;
+    position: relative;
+    padding-top: 26px;
+  }
+  &__item.ac:not(:last-child) {
+   margin-bottom: 9px;
+  }
+  &__item.ac .card__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding-left:46px;
+  background-image: url(/image/division/price.svg);
+  background-repeat: no-repeat;
+  background-position:0  center;
+  background-size: 25px 25px;
+  line-height: 1.4;
+  }
+  &__item.ac .ac-trigger {
+    background-color: $green;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: $white;
+    position: absolute;
+    top:62px;
+    right:30px;
+    &::after{
+      font-size: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__price {
+    font-weight: 700;
+    color: $green;
+    padding-left: 47px;
+    background-image: url(/image/division/price.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position:0  center;
+    display: block;
+    line-height: 1.4;
+  }
+  &__content {
+   margin-top: 10px;
+  }
+  &__item.ac .ac-panel .ac-text {
+    font-family:"Gotham pro", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color:$white;
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    & span{
+      padding-left: 20px;
+      position: relative;
+    }
+    & span::before{
+      content: '.';
+      font-size: 35px;
+      border-radius: 100%;
+      top: -9px;
+      left: 3px;
+      position: absolute;
+    }
+  }
+}

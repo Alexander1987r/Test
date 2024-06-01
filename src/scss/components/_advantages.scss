@@ -1,0 +1,63 @@
+@use "../variables" as *;
+
+.advantages {
+  background-color: $black;
+  padding: 45px 0;
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__list{
+
+  }
+  &__item.ac {
+    background-color: transparent;
+    margin-top: 0;
+    border: none;
+    border-bottom: 3px solid $gray;
+    padding: 7px 20px;
+    position: relative;
+  }
+  &__item-title {
+    font-size: 18px;
+  }
+  &__item.ac .ac-trigger {
+    background-color: $green;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: $white;
+    position: absolute;
+    top:15px;
+    right:20px;
+    &::after{
+      font-size: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__item.ac .ac-panel .ac-text {
+    font-family:"Gotham pro", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:$white;
+    padding:0;
+    margin: 0;
+
+  }
+  &__content {
+    margin-top: 16px;
+  }
+  &__btn {
+  }
+  &__text {
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+@use "../variables" as *;
+
+.footer {
+background-color: $black;
+font-weight: 700;
+font-size: 12px;
+line-height: 2.5;
+  &__container {
+    padding: 0;
+  }
+}
+.contacts {
+  padding: 26px 0 42px 0;
+  &__title {
+    font-size: 20px;
+    line-height: 3.2;
+    color: $gray;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  &__buttons-list {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__buttons-item {
+  }
+  &__buttons-item:not(:last-child) {
+    margin-right: 15px;
+  }
+  &__buttons-work {
+    width: 269px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  &__list {
+    margin-bottom: 42px;
+  }
+  &__item {
+    padding-left: 65px;
+    background-image: url(/image/footer/footer-phone.svg);
+    background-repeat: no-repeat;
+    background-position:23px 0;
+    background-size:32px 32px ;
+    &_mail{
+      background-image: url(/image/footer/footer-phone-2.svg);
+    }
+    &_map{
+      background-image: url(/image/footer/footer-phone-1.svg);
+      background-position: 23px 6px;
+    }
+    &_map a{
+     line-height: 2;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &__link {
+    line-height: 2.7;
+  }
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__social-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__social-link:hover svg {
+
+  }
+  &__social-icon path{
+    fill:#999999;
+  }
+  &__social-icon:hover path{
+    fill:#0056b3;
+  }
+}
+
+
+.map {
+  width: 100%;
+  height: 223px;
+}
+.copyright {
+  font-size: 14px;
+  line-height: 1.43;
+  padding: 41px 0 51px 0;
+  text-align: center;
+  max-width: 260px;
+  margin: 0 auto;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__list {
+    margin-bottom: 15px;
+  }
+  &__item {
+
+  }
+  &__item_order {
+    display: none;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+  &__logo {
+    width: 158px;
+    height: 25px;
+    margin: 0 auto;
+  }
+  &__logo-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

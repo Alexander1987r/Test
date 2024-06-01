@@ -1,0 +1,88 @@
+@use "../variables" as *;
+
+.career {
+  padding: 43px 0 47px 0;
+  background-color: $black;
+  &__container{
+    padding: 0 13px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    padding-left: 7px;
+    & span{
+      margin-top: 10px;
+    }
+  }
+  &__button-prev.swiper-button-prev{
+    top: 105px;
+    left: 0;
+  }
+  &__button-next.swiper-button-next{
+    transform: rotate(180deg);
+     top: 105px;
+     right: 0;
+  }
+  &__button-prev.swiper-button-prev::after,
+  &__button-next.swiper-button-next::after{
+   content: '';
+   width: 17px;
+   height: 30px;
+   background-image: url(/image/career/arrow.svg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+  }
+}
+.article {
+  text-align: center;
+  &__image {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  &__title {
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  & span{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    max-width: 205px;
+    margin: 0 auto;
+  }
+  }
+  &__text{
+    display: block;
+   font-size: 14px;
+   line-height: 1.43;
+   text-align: start;
+   position: relative;
+   padding-left: 25px;
+   &::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: $white;
+    top: 7px;
+    left: 10px;
+   }
+  }
+  &__text:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+

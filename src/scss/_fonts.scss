@@ -1,0 +1,39 @@
+
+
+$font-family: "Gotham pro", sans-serif;
+$font-size:18px;
+$font-weight:400;
+$line-height:1.25;
+
+/*regular*/
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/gothampro.woff2') format('woff2');
+}
+/*medium*/
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/gothampro_medium.woff2') format('woff2');
+}
+/*bold*/
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/gothampro_bold.woff2') format('woff2');
+}
+/*black*/
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/gothampro_black.woff2') format('woff2');
+}
