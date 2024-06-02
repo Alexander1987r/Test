@@ -153,11 +153,11 @@
   .card{
     margin-bottom: 45px;
     &__item.ac {
-      padding: 30px 45px;
+      padding: 19px 45px;
 
     }
     &__item.ac:not(:last-child) {
-      margin-bottom: 45px;
+      margin-bottom: 42px;
      }
      &__item.ac .card__title {
       margin-bottom: 20px;
@@ -195,7 +195,7 @@
   /*advent*/
 
   .advantages {
-    padding: 70px 0;
+    padding: 65px 0;
     &__container{
       padding: 0 120px;
       max-width: 1440px;
@@ -253,7 +253,7 @@
 
   /*products*/
   .products{
-    padding: 70px 0;
+    padding: 64px 0;
     &__title {
       margin-bottom: 70px;
     }
@@ -520,7 +520,7 @@
     }
   }
   .advantages__item.ac {
-    padding:25px 45px 25px 255px ;
+    padding:13px 45px 13px 255px ;
     background-size: 165px 100px;
   }
   .products__slide.swiper {
