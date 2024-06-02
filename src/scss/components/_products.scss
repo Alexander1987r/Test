@@ -1,0 +1,93 @@
+@use "../variables" as *;
+
+.products {
+    padding: 45px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__list-buttons {
+    outline: 1px solid;
+    display: flex;
+    max-width: 221px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 35px auto;
+  }
+  &__button {
+    width: 108px;
+  }
+  &__slide.swiper {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  &__slide-wrapper.swiper-wrapper {
+    padding: 5px 0;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  &__slide-item.swiper-slide {
+    height: 182px;
+    border-radius: 10px;
+  }
+  &__slide-item.swiper-slide-active {
+    box-shadow: 0 0 0 5px rgba(217, 217, 217, 0.25);
+    background: #d9d9d9;
+  }
+  &__slide-item.swiper-slide-prev,
+  &__slide-item.swiper-slide-next {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background:#d9d9d9 linear-gradient(270deg, rgba(0, 0, 0, 0.7) 25.22%, rgba(0, 0, 0, 0.7) 100%);
+    height: 147px;
+  }
+
+  &__slide-btn-prev.swiper-button-prev,
+  &__slide-btn-next.swiper-button-next {
+    width: 17px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__slide-btn-prev.swiper-button-prev::after,
+  &__slide-btn-next.swiper-button-next::after{
+    content: '';
+    width: 17px;
+    height: 30px;
+    background-image: url(/image/career/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__slide-btn-next.swiper-button-next {
+    transform:translateY(-50%) rotate(180deg);
+  }
+  &__pagination.swiper-pagination{
+    outline: 1px solid;
+  }
+  &__pagination .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background-color: #888988;
+    opacity: 1;
+  }
+  &__pagination .swiper-pagination-bullet-active{
+    width: 42px;
+    background-color: $white;
+    border-radius: 25px;
+  }
+  &__pagination.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -3px;
+  }
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
