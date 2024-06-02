@@ -334,10 +334,15 @@
     }
     &__button-prev.swiper-button-prev{
       top: 178px;
+      outline: 1px solid;
+      width: 34px;
+      height: 40px;
     }
     &__button-next.swiper-button-next{
       transform: rotate(180deg);
        top: 178px;
+       width: 34px;
+       height: 40px;
     }
 
   }
@@ -346,6 +351,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 65px 1fr;
     grid-column-gap:30px ;
+    padding-left: 25px;
   }
   .article{
     &__wrapper{
@@ -531,23 +537,44 @@
 
   }
   .career{
+    &__title{
+      margin-bottom: 61px;
+    }
     &__text{
+      margin-bottom: 108px;
       & span{
         max-width: 600px;
         background-size: 91px 91px;
-        padding-left: 100px;
+        padding-left: 216px;
+        background-position: 96px 0px;
         &:not(:last-child){
-          margin-right: 100px;
+          margin-right: 59px;
         }
 
       }
     }
+    &__button-prev.swiper-button-prev{
+      top: 199px;
+      left: 38px;
+    }
+    &__button-next.swiper-button-next{
+      transform: rotate(180deg);
+       top: 199px;
+       right: 38px;
+    }
+  }
+  .article__title{
+    padding-left: 100px;
   }
   .article__text{
     padding-left: 160px;
+
     &::before{
       left: 100px;
     }
+  }
+  .article__text:not(:last-child){
+    margin-bottom: 23px;
   }
   .footer {
       &__container {

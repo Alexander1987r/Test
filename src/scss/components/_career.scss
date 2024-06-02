@@ -8,7 +8,7 @@
   }
   &__title {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   &__text {
     font-weight: 700;
@@ -16,20 +16,27 @@
     line-height: 1.43;
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
     padding-left: 7px;
     & span{
       margin-top: 10px;
     }
   }
+  &__list.swiper{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+  }
   &__button-prev.swiper-button-prev{
-    top: 105px;
-    left: 0;
+    top: 118px;
+    left: 8px;
   }
   &__button-next.swiper-button-next{
     transform: rotate(180deg);
-     top: 105px;
-     right: 0;
+     top: 118px;
+     right: 8px;
   }
   &__button-prev.swiper-button-prev::after,
   &__button-next.swiper-button-next::after{
@@ -68,7 +75,7 @@
    line-height: 1.43;
    text-align: start;
    position: relative;
-   padding-left: 25px;
+   padding-left: 41px;
    &::before{
     content: '';
     position: absolute;
@@ -76,12 +83,12 @@
     height: 5px;
     border-radius: 100%;
     background-color: $white;
-    top: 7px;
-    left: 10px;
+    top: 12px;
+    left: 27px;
    }
   }
   &__text:not(:last-child){
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 

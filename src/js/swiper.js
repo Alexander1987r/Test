@@ -29,6 +29,7 @@ export const getSwiper=()=>{
 
   });
   const swiper= new Swiper('.career__list',{
+    effect:'slider',
   navigation:{
       prevEl:'.career__button-prev',
       nextEl:'.career__button-next'

@@ -15,10 +15,10 @@
     margin-bottom: 9px;
   }
   &__item-button:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   &__button {
-    padding: 0 16px;
+    padding: 0 11px;
     border: none;
     outline: 3px solid $gray;
   }
@@ -30,12 +30,12 @@
 
 .card {
   max-width: 745px;
-  margin:0 auto 35px auto;
+  margin:0 auto 32px auto;
   &__item.ac {
     background-color: transparent;
     border: 3px solid $gray;
     border-radius: 30px;
-    padding: 21px;
+    padding: 19px;
     margin-top: 0;
     position: relative;
     padding-top: 26px;
