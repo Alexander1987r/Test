@@ -8,7 +8,6 @@
   }
 
   &__list-buttons {
-    outline: 1px solid;
     display: flex;
     max-width: 221px;
     justify-content: space-between;
@@ -64,9 +63,7 @@
   &__slide-btn-next.swiper-button-next {
     transform:translateY(-50%) rotate(180deg);
   }
-  &__pagination.swiper-pagination{
-    outline: 1px solid;
-  }
+
   &__pagination .swiper-pagination-bullet{
     width: 15px;
     height: 15px;
@@ -83,11 +80,3 @@
   }
 }
 
-.swiper {
-}
-
-.swiper-wrapper {
-}
-
-.swiper-slide {
-}
